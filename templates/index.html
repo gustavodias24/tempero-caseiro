@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tempero Caseiro: temperos artesanais, saudáveis e práticos para transformar refeições do dia a dia em comida com sabor de casa.">
+  <title>Tempero Caseiro | Sabor de casa em segundos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Tempero Caseiro">
+        <img src="{{ url_for('static', filename='img/logo.webp') }}" alt="Logo Tempero Caseiro">
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links">
+        <a href="#produtos">Produtos</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#historia">Nossa essência</a>
+        <a href="#kit">Kit completo</a>
+        <a class="btn btn-small" target="_blank" rel="noopener" href="https://wa.me/5567935010718?text=Ol%C3%A1%21%20Quero%20conhecer%20os%20temperos%20e%20fazer%20meu%20pedido.">Pedir no WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Artesanal • saudável • feito com carinho</span>
+          <h1>O verdadeiro sabor da comida de casa, <em>pronto em segundos.</em></h1>
+          <p>Temperos 100% artesanais e saudáveis, criados para quem não abre mão de uma refeição deliciosa, mas precisa de praticidade no dia a dia.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#produtos">Conheça os temperos</a>
+            <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://wa.me/5567935010718?text=Ol%C3%A1%21%20Quero%20pedir%20o%20Kit%20de%20Temperos%20Caseiros.">Quero meu kit</a>
+          </div>
+          <div class="trust-row">
+            <span>🌿 Ingredientes selecionados</span><span>♡ Feito artesanalmente</span><span>⏱ Praticidade diária</span>
+          </div>
+        </div>
+        <div class="hero-media reveal">
+          <img src="{{ url_for('static', filename='img/hero.webp') }}" alt="Linha de temperos artesanais Tempero Caseiro">
+          <div class="floating-badge"><strong>Sabor de casa</strong><small>sem complicação</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip">
+      <div class="container strip-grid">
+        <div><b>100% artesanal</b><span>Produção cuidadosa</span></div>
+        <div><b>Mais praticidade</b><span>Tempero pronto para usar</span></div>
+        <div><b>Rendimento superior</b><span>Pequena quantidade, muito sabor</span></div>
+        <div><b>Atendimento direto</b><span>Pedido pelo WhatsApp</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="produtos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Nossa linha</span>
+          <h2>Três temperos. Infinitas possibilidades.</h2>
+          <p>Uma seleção pensada para facilitar sua rotina sem abrir mão do sabor marcante de uma boa comida caseira.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <div class="product-img"><img src="{{ url_for('static', filename='img/produto-completo-close.webp') }}" alt="Tempero Completo artesanal"></div>
+            <div class="product-body"><span class="tag">O clássico</span><h3>Tempero Completo</h3><p>O clássico indispensável. A base perfeita para deixar arroz, feijão e carnes do cotidiano com aquele aroma irresistível.</p><a target="_blank" rel="noopener" href="https://wa.me/5567935010718?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Tempero%20Completo.">Quero esse sabor →</a></div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-img"><img src="{{ url_for('static', filename='img/produto-especial-close.webp') }}" alt="Tempero Especial para aves, suínos, peixes e saladas"></div>
+            <div class="product-body"><span class="tag">Leve e versátil</span><h3>Tempero Especial</h3><p>O toque de frescor e leveza que realça aves, suínos, peixes e saladas sem sobrecarregar o prato.</p><a target="_blank" rel="noopener" href="https://wa.me/5567935010718?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Tempero%20Especial.">Quero esse sabor →</a></div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-img"><img src="{{ url_for('static', filename='img/produto-molhos-close.webp') }}" alt="Tempero para molhos e caldos"></div>
+            <div class="product-body"><span class="tag">Mais profundidade</span><h3>Molhos & Caldos</h3><p>O segredo dos pratos encorpados. Dá profundidade e potência imediata a sopas, molhos e cozidos lentos.</p><a target="_blank" rel="noopener" href="https://wa.me/5567935010718?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Tempero%20para%20Molhos%20e%20Caldos.">Quero esse sabor →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefit-section" id="beneficios">
+      <div class="container">
+        <div class="benefit-layout">
+          <div class="benefit-photo reveal"><img src="{{ url_for('static', filename='img/kit-close.webp') }}" alt="Kit de temperos artesanais"><div class="photo-note">Um kit para acompanhar sua cozinha todos os dias.</div></div>
+          <div class="benefit-copy reveal">
+            <span class="eyebrow">Por que escolher o kit?</span>
+            <h2>Mais sabor. Mais saúde. Mais praticidade.</h2>
+            <div class="benefit-list">
+              <div><span>01</span><div><h3>Saúde em primeiro lugar</h3><p>Diferente dos temperos industrializados cheios de sódio excessivo, conservantes e aditivos químicos, nosso kit é feito com ingredientes frescos e selecionados.</p></div></div>
+              <div><span>02</span><div><h3>Praticidade sem culpa</h3><p>Chegue do trabalho e tempere sua comida instantaneamente, garantindo um prato saudável e caseiro em fração de minutos.</p></div></div>
+              <div><span>03</span><div><h3>Rendimento superior</h3><p>Uma pequena colher entrega sabor total, fazendo cada embalagem durar muito mais.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story" id="historia">
+      <div class="container story-grid">
+        <div class="story-copy reveal">
+          <span class="eyebrow">Nossa essência</span>
+          <h2>Comida afetiva começa no tempero.</h2>
+          <p>O Tempero Caseiro nasceu para devolver à rotina aquele aroma que lembra cozinha de família: ingredientes bem escolhidos, mistura artesanal e uso descomplicado.</p>
+          <p>É sabor pronto para acompanhar desde o arroz e feijão de todo dia até receitas especiais para dividir com quem você gosta.</p>
+          <a class="text-link" target="_blank" rel="noopener" href="https://wa.me/5567935010718?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20os%20temperos.">Falar com a gente →</a>
+        </div>
+        <div class="story-gallery reveal">
+          <img class="g1" src="{{ url_for('static', filename='img/feito-a-mao.webp') }}" alt="Produção artesanal de temperos">
+          <img class="g2" src="{{ url_for('static', filename='img/trio-temperos.webp') }}" alt="Trio de temperos Tempero Caseiro">
+          <img class="g3" src="{{ url_for('static', filename='img/estoque.webp') }}" alt="Variedade de temperos artesanais">
+        </div>
+      </div>
+    </section>
+
+    <section class="section use-section">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">Na sua rotina</span><h2>Um tempero para cada momento.</h2><p>Do almoço rápido ao prato de domingo, você escolhe o sabor e deixa o resto mais simples.</p></div>
+        <div class="use-grid">
+          <figure class="reveal"><img src="{{ url_for('static', filename='img/detalhe-completo.webp') }}" alt="Tempero completo"><figcaption><b>Dia a dia</b><span>Arroz, feijão, carnes e legumes.</span></figcaption></figure>
+          <figure class="reveal"><img src="{{ url_for('static', filename='img/trio-mesa.webp') }}" alt="Temperos para refeições"><figcaption><b>Receitas leves</b><span>Aves, peixes, suínos e saladas.</span></figcaption></figure>
+          <figure class="reveal"><img src="{{ url_for('static', filename='img/rotulo-completo.webp') }}" alt="Ingredientes do tempero"><figcaption><b>Pratos encorpados</b><span>Molhos, caldos, sopas e cozidos.</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section kit-section" id="kit">
+      <div class="container kit-wrap reveal">
+        <div class="kit-image"><img src="{{ url_for('static', filename='img/kit-horizontal.webp') }}" alt="Kit completo de temperos"></div>
+        <div class="kit-content">
+          <span class="eyebrow light">Kit completo</span>
+          <h2>Os sabores essenciais da sua cozinha em um só pedido.</h2>
+          <p>Leve a combinação Completo + Especial + Molhos & Caldos e tenha praticidade para diferentes receitas ao longo da semana.</p>
+          <ul><li>✓ Combinações versáteis</li><li>✓ Produção artesanal</li><li>✓ Mais sabor com pouco produto</li></ul>
+          <a class="btn btn-light" target="_blank" rel="noopener" href="https://wa.me/5567935010718?text=Ol%C3%A1%21%20Quero%20pedir%20o%20Kit%20Completo%20de%20Temperos.">Pedir kit pelo WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-gallery">
+      <div class="container">
+        <div class="gallery-grid reveal">
+          <img src="{{ url_for('static', filename='img/linha-completa.webp') }}" alt="Linha completa de temperos">
+          <img src="{{ url_for('static', filename='img/kit-produtos.webp') }}" alt="Kit de temperos">
+          <img src="{{ url_for('static', filename='img/embalagem-completo.webp') }}" alt="Embalagem Tempero Completo">
+          <img src="{{ url_for('static', filename='img/artesanal.webp') }}" alt="Tempero Caseiro artesanal">
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-box reveal">
+        <div><span class="eyebrow light">Seu próximo almoço merece mais sabor</span><h2>Quer experimentar o verdadeiro sabor da comida de casa?</h2><p>Faça seu pedido diretamente pelo WhatsApp e escolha os temperos que combinam com sua rotina.</p></div>
+        <a class="btn btn-light" target="_blank" rel="noopener" href="https://wa.me/5567935010718?text=Ol%C3%A1%21%20Quero%20fazer%20meu%20pedido%20de%20temperos.">Chamar no WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" target="_blank" rel="noopener" href="https://wa.me/5567935010718?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20os%20temperos." aria-label="Falar no WhatsApp">WA</a>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand"><img src="{{ url_for('static', filename='img/logo.webp') }}" alt="Tempero Caseiro"><p>Sabor artesanal para deixar sua rotina mais gostosa, prática e acolhedora.</p></div>
+      <div><b>Navegação</b><a href="#produtos">Produtos</a><a href="#beneficios">Benefícios</a><a href="#historia">Nossa essência</a><a href="#kit">Kit completo</a></div>
+      <div><b>Atendimento</b><a target="_blank" rel="noopener" href="https://wa.me/5567935010718">WhatsApp: (67) 93501-0718</a><span>Pedidos e dúvidas pelo WhatsApp.</span></div>
+    </div>
+    <div class="container footer-bottom">© 2026 Tempero Caseiro. Todos os direitos reservados.</div>
+  </footer>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
