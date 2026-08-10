@@ -117,40 +117,98 @@
     </section>
 
     <section class="section use-section" style="text-align: center;">
-  <div class="container">
-    <div class="section-head reveal" style="max-width: 760px; margin: 0 auto 40px;">
-      <span class="eyebrow">Na sua rotina</span>
-      <h2>Um tempero para cada momento.</h2>
-      <p>Do almoço rápido ao prato de domingo, você escolhe o sabor e deixa o resto mais simples.</p>
-    </div>
+  <div class="use-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); justify-content: center; align-items: start; gap: 32px; max-width: 1200px; margin: 0 auto;">
 
-    <div class="use-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 480px)); justify-content: center; align-items: start; gap: 32px;">
-      <figure class="reveal" style="width: 100%; margin: 0; text-align: center;">
-        <img
-          src="{{ url_for('static', filename='img/detalhe-completo.webp') }}"
-          alt="Tempero completo"
-          style="display: block; width: 100%; height: auto; margin: 0 auto; border-radius: 24px;"
-        >
-        <figcaption style="display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 18px;">
-          <b>Dia a dia</b>
-          <span>Arroz, feijão, carnes e legumes.</span>
-        </figcaption>
-      </figure>
+  <figure class="reveal" style="width: 100%; margin: 0; text-align: center;">
+    <img
+      src="{{ url_for('static', filename='img/1.jpeg') }}"
+      alt="Tempero Completo artesanal"
+      style="display: block; width: 100%; height: auto; margin: 0 auto; border-radius: 24px;"
+    >
+    <figcaption style="display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 18px;">
+      <b>Para o dia a dia</b>
+      <span>Perfeito para arroz, feijão, carnes, legumes e aquelas receitas que fazem parte da rotina.</span>
+    </figcaption>
+  </figure>
 
-      <figure class="reveal" style="width: 100%; margin: 0; text-align: center;">
-        <img
-          src="{{ url_for('static', filename='img/trio-mesa.webp') }}"
-          alt="Temperos para refeições"
-          style="display: block; width: 100%; height: auto; margin: 0 auto; border-radius: 24px;"
-        >
-        <figcaption style="display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 18px;">
-          <b>Receitas leves</b>
-          <span>Aves, peixes, suínos e saladas.</span>
-        </figcaption>
-      </figure>
-    </div>
-  </div>
+  <figure class="reveal" style="width: 100%; margin: 0; text-align: center;">
+    <img
+      src="{{ url_for('static', filename='img/2.jpeg') }}"
+      alt="Tempero Especial artesanal"
+      style="display: block; width: 100%; height: auto; margin: 0 auto; border-radius: 24px;"
+    >
+    <figcaption style="display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 18px;">
+      <b>Receitas leves e saborosas</b>
+      <span>Uma combinação versátil para realçar aves, peixes, suínos e saladas com muito mais sabor.</span>
+    </figcaption>
+  </figure>
+
+  <figure class="reveal" style="width: 100%; margin: 0; text-align: center;">
+    <img
+      src="{{ url_for('static', filename='img/3.jpeg') }}"
+      alt="Tempero para Molhos e Caldos"
+      style="display: block; width: 100%; height: auto; margin: 0 auto; border-radius: 24px;"
+    >
+    <figcaption style="display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 18px;">
+      <b>Molhos, caldos e receitas especiais</b>
+      <span>Ideal para dar mais intensidade e aquele sabor caseiro marcante a sopas, molhos e cozidos.</span>
+    </figcaption>
+  </figure>
+
+</div>
 </section>
+
+    <section class="section social-proof-section" id="avaliacoes" style="padding: 84px 0; background: #fffaf4;">
+      <div class="container">
+        <div class="section-head reveal" style="max-width: 760px; margin: 0 auto 42px; text-align: center;">
+          <span class="eyebrow">Quem experimenta, recomenda</span>
+          <h2>Tempero de casa que conquista de verdade.</h2>
+          <p>Veja o que nossos clientes dizem sobre o sabor, a praticidade e o carinho presente em cada preparo.</p>
+        </div>
+
+        <div class="reviews-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; align-items: stretch;">
+          <article class="review-card reveal" style="background: #ffffff; border: 1px solid rgba(72, 49, 31, .10); border-radius: 22px; padding: 28px; box-shadow: 0 14px 34px rgba(72, 49, 31, .08); display: flex; flex-direction: column; gap: 16px;">
+            <div aria-label="5 de 5 estrelas" style="color: #d7942f; font-size: 1.05rem; letter-spacing: 3px;">★★★★★</div>
+            <p style="margin: 0; line-height: 1.75;">“O sabor é maravilhoso e lembra muito comida feita em casa. Uso principalmente no arroz e no feijão e faz muita diferença.”</p>
+            <div style="margin-top: auto; padding-top: 6px;">
+              <strong style="display: block;">Cliente 01</strong>
+              <small style="opacity: .72;">Exemplo — substitua por uma avaliação real</small>
+            </div>
+          </article>
+
+          <article class="review-card reveal" style="background: #ffffff; border: 1px solid rgba(72, 49, 31, .10); border-radius: 22px; padding: 28px; box-shadow: 0 14px 34px rgba(72, 49, 31, .08); display: flex; flex-direction: column; gap: 16px;">
+            <div aria-label="5 de 5 estrelas" style="color: #d7942f; font-size: 1.05rem; letter-spacing: 3px;">★★★★★</div>
+            <p style="margin: 0; line-height: 1.75;">“Além de gostoso, é muito prático. Chego cansada e consigo preparar uma refeição saborosa sem perder tempo fazendo várias misturas.”</p>
+            <div style="margin-top: auto; padding-top: 6px;">
+              <strong style="display: block;">Cliente 02</strong>
+              <small style="opacity: .72;">Exemplo — substitua por uma avaliação real</small>
+            </div>
+          </article>
+
+          <article class="review-card reveal" style="background: #ffffff; border: 1px solid rgba(72, 49, 31, .10); border-radius: 22px; padding: 28px; box-shadow: 0 14px 34px rgba(72, 49, 31, .08); display: flex; flex-direction: column; gap: 16px;">
+            <div aria-label="5 de 5 estrelas" style="color: #d7942f; font-size: 1.05rem; letter-spacing: 3px;">★★★★★</div>
+            <p style="margin: 0; line-height: 1.75;">“Gostei muito do rendimento. Uma pequena quantidade já deixa o prato bem temperado e o cheiro na cozinha fica incrível.”</p>
+            <div style="margin-top: auto; padding-top: 6px;">
+              <strong style="display: block;">Cliente 03</strong>
+              <small style="opacity: .72;">Exemplo — substitua por uma avaliação real</small>
+            </div>
+          </article>
+
+          <article class="review-card reveal" style="background: #ffffff; border: 1px solid rgba(72, 49, 31, .10); border-radius: 22px; padding: 28px; box-shadow: 0 14px 34px rgba(72, 49, 31, .08); display: flex; flex-direction: column; gap: 16px;">
+            <div aria-label="5 de 5 estrelas" style="color: #d7942f; font-size: 1.05rem; letter-spacing: 3px;">★★★★★</div>
+            <p style="margin: 0; line-height: 1.75;">“Comprei o kit e virou item fixo aqui em casa. O Especial ficou ótimo em frango e peixe, e o Completo uso praticamente todos os dias.”</p>
+            <div style="margin-top: auto; padding-top: 6px;">
+              <strong style="display: block;">Cliente 04</strong>
+              <small style="opacity: .72;">Exemplo — substitua por uma avaliação real</small>
+            </div>
+          </article>
+        </div>
+
+        <div class="reveal" style="margin-top: 34px; text-align: center;">
+          <a class="btn" target="_blank" rel="noopener" href="https://wa.me/5567935010718?text=Ol%C3%A1%21%20Vi%20as%20avalia%C3%A7%C3%B5es%20no%20site%20e%20quero%20experimentar%20os%20temperos.">Quero experimentar também</a>
+        </div>
+      </div>
+    </section>
 
     <section class="section kit-section" id="kit">
       <div class="container kit-wrap reveal">
