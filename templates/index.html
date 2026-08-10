@@ -116,19 +116,45 @@
       </div>
     </section>
 
-    <section class="section use-section">
-      <div class="container">
-        <div class="section-head reveal"><span class="eyebrow">Na sua rotina</span><h2>Um tempero para cada momento.</h2><p>Do almoço rápido ao prato de domingo, você escolhe o sabor e deixa o resto mais simples.</p></div>
-        <div class="use-grid">
-          <figure class="reveal"><img src="{{ url_for('static', filename='img/detalhe-completo.webp') }}" alt="Tempero completo"><figcaption><b>Dia a dia</b><span>Arroz, feijão, carnes e legumes.</span></figcaption></figure>
-          <figure class="reveal"><img src="{{ url_for('static', filename='img/trio-mesa.webp') }}" alt="Temperos para refeições"><figcaption><b>Receitas leves</b><span>Aves, peixes, suínos e saladas.</span></figcaption></figure>
-        </div>
-      </div>
-    </section>
+    <section class="section use-section" style="text-align: center;">
+  <div class="container">
+    <div class="section-head reveal" style="max-width: 760px; margin: 0 auto 40px;">
+      <span class="eyebrow">Na sua rotina</span>
+      <h2>Um tempero para cada momento.</h2>
+      <p>Do almoço rápido ao prato de domingo, você escolhe o sabor e deixa o resto mais simples.</p>
+    </div>
+
+    <div class="use-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 480px)); justify-content: center; align-items: start; gap: 32px;">
+      <figure class="reveal" style="width: 100%; margin: 0; text-align: center;">
+        <img
+          src="{{ url_for('static', filename='img/detalhe-completo.webp') }}"
+          alt="Tempero completo"
+          style="display: block; width: 100%; height: auto; margin: 0 auto; border-radius: 24px;"
+        >
+        <figcaption style="display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 18px;">
+          <b>Dia a dia</b>
+          <span>Arroz, feijão, carnes e legumes.</span>
+        </figcaption>
+      </figure>
+
+      <figure class="reveal" style="width: 100%; margin: 0; text-align: center;">
+        <img
+          src="{{ url_for('static', filename='img/trio-mesa.webp') }}"
+          alt="Temperos para refeições"
+          style="display: block; width: 100%; height: auto; margin: 0 auto; border-radius: 24px;"
+        >
+        <figcaption style="display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 18px;">
+          <b>Receitas leves</b>
+          <span>Aves, peixes, suínos e saladas.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 
     <section class="section kit-section" id="kit">
       <div class="container kit-wrap reveal">
-        <div class="kit-image"><img src="{{ url_for('static', filename='img/kit-horizontal.webp') }}" alt="Kit completo de temperos"></div>
+        <div class="kit-image"><img src="{{ url_for('static', filename='img/kit-horizontal.jpeg') }}" alt="Kit completo de temperos"></div>
         <div class="kit-content">
           <span class="eyebrow light">Kit completo</span>
           <h2>Os sabores essenciais da sua cozinha em um só pedido.</h2>
